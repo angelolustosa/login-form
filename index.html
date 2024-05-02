@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- icon -->
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- js -->
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -44,9 +47,9 @@
                 </div>
                 <div class="input-box">
                     <span class="icon">
-                        <ion-icon name="lock"></ion-icon>
+                        <ion-icon id="icon-pass" name="eye" onclick="showPass()"></ion-icon>
                     </span>
-                    <input type="email" name="email" id="" required>
+                    <input type="password" name="pass" id="pass" required>
                     <label for="email">Password</label>
                 </div>
                 <div class="remember-forgot">
